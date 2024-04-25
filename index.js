@@ -53,7 +53,7 @@ async function publishPost(csv) {
         // await axios.get(`${tgApi}bot${process.env.BOT_TOKEN}/sendMessage?chat_id=${process.env.CHAT_ID}&text=${text}`)
 
         indexRow++;
-        setTimeout(start, 5000); //7 hours - 25200
+        setTimeout(start, 25200); //7 hours - 25200
 
     } catch(e) {
         console.log(e);
@@ -64,13 +64,17 @@ async function publishPost(csv) {
 function generateContent(content) {
     let [ title, text, offerText, link ] = content;
     return `
-<b>📌${title}📌</b>
-
+<b>💸${title}💸</b>
 ${text}
+Bitcoin to Ethereum?
+<b>${offerText}</b>
 
-<u>${offerText}</u>
+<a href="https://ff.io/?ref=fn83rbkd">👇Jump to👇</a>
 
-<a href="${link}">👇Переходи👇</a>
+Bitcoin to USDT TRC20?
+<b>${offerText}</b>
+
+<a href="https://www.bestchange.com/?p=1306645">👇Jump to👇</a>
     `;
 }
 
