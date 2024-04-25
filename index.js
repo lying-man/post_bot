@@ -53,7 +53,7 @@ async function publishPost(csv) {
         // await axios.get(`${tgApi}bot${process.env.BOT_TOKEN}/sendMessage?chat_id=${process.env.CHAT_ID}&text=${text}`)
 
         indexRow++;
-        setTimeout(start, 25200); //7 hours - 25200
+        setTimeout(start, 17369832); //7 hours - 25200
 
     } catch(e) {
         console.log(e);
